@@ -1,8 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ShieldCheck, Ruler, BadgeCheck, Factory, MessageCircle, ArrowRight } from "lucide-react";
+import { ShieldCheck, Ruler, BadgeCheck, Factory, Mail, ArrowRight } from "lucide-react";
 import logoAsset from "@/assets/backrest-logo.jpg.asset.json";
-
-const WHATSAPP_URL = "https://wa.me/918451945853";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -52,13 +50,11 @@ function Index() {
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:backrest@sachafoam.com"
                   className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
                 >
-                  <MessageCircle className="h-4 w-4" />
-                  Contact Us on WhatsApp
+                  <Mail className="h-4 w-4" />
+                  Email Us
                 </a>
                 <a
                   href="#products"
@@ -236,7 +232,7 @@ function Index() {
               </h2>
               <p className="mt-4 max-w-lg text-muted-foreground">
                 For dealer enquiries, orders or product information, reach us
-                directly on WhatsApp or email.
+                directly by phone or email.
               </p>
             </div>
 
@@ -281,30 +277,21 @@ function Index() {
                   </div>
                   <div>
                     <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                      WhatsApp
+                      Phone
                     </dt>
-                    <dd className="mt-1">
-                      <a
-                        href={WHATSAPP_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-medium text-foreground transition-colors hover:text-gold"
-                      >
-                        +91 84519 45853
-                      </a>
+                    <dd className="mt-1 font-medium text-foreground">
+                      +91 84519 45853
                     </dd>
                   </div>
                 </div>
               </dl>
 
               <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:backrest@sachafoam.com"
                 className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
               >
-                <MessageCircle className="h-4 w-4" />
-                Chat on WhatsApp
+                <Mail className="h-4 w-4" />
+                Email Us
               </a>
             </div>
           </div>
