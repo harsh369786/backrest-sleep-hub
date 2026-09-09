@@ -1,4 +1,3 @@
-```tsx
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ShieldCheck,
@@ -342,4 +341,3 @@ function Index() {
     </>
   );
 }
-```
