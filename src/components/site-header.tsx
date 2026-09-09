@@ -38,7 +38,7 @@ export function SiteHeader() {
             alt="Backrest logo"
             width={120}
             height={32}
-            className="h-8 w-auto rounded-sm object-contain"
+            className="h-10 w-auto rounded-sm object-contain"
           />
         </Link>
 
