@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/backrest-logo.jpg.asset.json";
+import logoAsset from "@/assets/backrest-logo.jpeg";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -30,15 +30,15 @@ export function SiteHeader() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link to="/" className="flex items-center gap-2" aria-label="Backrest home">
-          <img
-            src={logoAsset.url}
-            alt="Backrest logo"
-            width={120}
-            height={32}
-            className="h-10 w-auto rounded-sm object-contain"
-          />
-        </Link>
+         <Link to="/" className="flex items-center gap-2" aria-label="Backrest home">
+    <img
+      src={logoAsset}
+      alt="Backrest logo"
+      width={120}
+      height={32}
+      className="h-10 w-auto rounded-sm object-contain"
+    />
+  </Link>
 
         <nav className="hidden items-center gap-7 md:flex" aria-label="Primary">
           {navLinks.map((l) =>
