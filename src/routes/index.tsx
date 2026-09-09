@@ -1,6 +1,14 @@
+```tsx
 import { createFileRoute } from "@tanstack/react-router";
-import { ShieldCheck, Ruler, BadgeCheck, Factory, Mail, ArrowRight } from "lucide-react";
-import logoAsset from "@/assets/backrest-logo.jpg.asset.json";
+import {
+  ShieldCheck,
+  Ruler,
+  BadgeCheck,
+  Factory,
+  Mail,
+  ArrowRight,
+} from "lucide-react";
+import logoAsset from "@/assets/backrest-logo.jpeg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,13 +49,16 @@ function Index() {
               <span className="inline-flex items-center rounded-full border border-gold/40 bg-background px-3 py-1 text-xs font-medium tracking-wide text-foreground/80">
                 By Shree Sacha Foam Industries
               </span>
+
               <h1 className="mt-5 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
                 India's Trusted Mattress Brand
               </h1>
+
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
                 Premium quality mattresses crafted for comfort — trusted by
                 dealers across India.
               </p>
+
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <a
                   href="mailto:backrest@sachafoam.com"
@@ -56,6 +67,7 @@ function Index() {
                   <Mail className="h-4 w-4" />
                   Email Us
                 </a>
+
                 <a
                   href="#products"
                   className="inline-flex items-center gap-1 text-sm font-semibold text-foreground transition-colors hover:text-foreground/70"
@@ -64,15 +76,21 @@ function Index() {
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
+
               <p className="mt-6 text-sm text-muted-foreground">
                 Sleep Better. Live Better.
               </p>
             </div>
+
             <div className="flex justify-center">
               <div className="relative">
-                <div className="absolute inset-0 -z-10 rounded-full bg-gold/10 blur-3xl" aria-hidden />
+                <div
+                  className="absolute inset-0 -z-10 rounded-full bg-gold/10 blur-3xl"
+                  aria-hidden
+                />
+
                 <img
-                  src={logoAsset.url}
+                  src={logoAsset}
                   alt="Backrest premium mattresses"
                   width={480}
                   height={305}
@@ -93,10 +111,12 @@ function Index() {
               <p className="text-sm font-semibold uppercase tracking-wider text-gold">
                 About Backrest
               </p>
+
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                 Crafted in Bhiwandi, trusted across India
               </h2>
             </div>
+
             <div className="text-lg leading-relaxed text-muted-foreground">
               <p>
                 Backrest is a brand by{" "}
@@ -111,10 +131,11 @@ function Index() {
                 </span>
                 .
               </p>
+
               <p className="mt-4">
                 Our focus is simple: durable, comfortable mattresses built from
-                quality foam — and dependable supply for the partners who
-                sell them.
+                quality foam — and dependable supply for the partners who sell
+                them.
               </p>
             </div>
           </div>
@@ -128,10 +149,12 @@ function Index() {
             <p className="text-sm font-semibold uppercase tracking-wider text-gold">
               Our Offerings
             </p>
+
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               What we make and how we supply
             </h2>
           </div>
+
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               {
@@ -154,9 +177,11 @@ function Index() {
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <span className="text-lg font-bold">B</span>
                 </div>
+
                 <h3 className="mt-4 text-lg font-semibold text-foreground">
                   {card.title}
                 </h3>
+
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {card.desc}
                 </p>
@@ -173,10 +198,12 @@ function Index() {
             <p className="text-sm font-semibold uppercase tracking-wider text-gold">
               Why Choose Us
             </p>
+
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Built for comfort, backed for years
             </h2>
           </div>
+
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
@@ -207,9 +234,11 @@ function Index() {
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15 text-gold">
                   <item.icon className="h-5 w-5" />
                 </div>
+
                 <h3 className="mt-4 text-base font-semibold text-foreground">
                   {item.title}
                 </h3>
+
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {item.desc}
                 </p>
@@ -227,9 +256,11 @@ function Index() {
               <p className="text-sm font-semibold uppercase tracking-wider text-gold">
                 Contact
               </p>
+
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                 Get in touch with Backrest
               </h2>
+
               <p className="mt-4 max-w-lg text-muted-foreground">
                 For dealer enquiries, orders or product information, reach us
                 directly by phone or email.
@@ -242,30 +273,39 @@ function Index() {
                   <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                     Business Name
                   </dt>
+
                   <dd className="mt-1 font-medium text-foreground">
                     Shree Sacha Foam Industries
                   </dd>
                 </div>
+
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                     Brand
                   </dt>
-                  <dd className="mt-1 font-medium text-foreground">Backrest</dd>
+
+                  <dd className="mt-1 font-medium text-foreground">
+                    Backrest
+                  </dd>
                 </div>
+
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                     Address
                   </dt>
+
                   <dd className="mt-1 font-medium text-foreground">
-                    54/1, Kone, Bhiwandi–Wada Rd, Shirishpada,
-                    Maharashtra 421303, India
+                    54/1, Kone, Bhiwandi–Wada Rd, Shirishpada, Maharashtra
+                    421303, India
                   </dd>
                 </div>
+
                 <div className="grid gap-3 sm:grid-cols-2">
                   <div>
                     <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                       Email
                     </dt>
+
                     <dd className="mt-1">
                       <a
                         href="mailto:backrest@sachafoam.com"
@@ -275,10 +315,12 @@ function Index() {
                       </a>
                     </dd>
                   </div>
+
                   <div>
                     <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                       Phone
                     </dt>
+
                     <dd className="mt-1 font-medium text-foreground">
                       +91 84519 45853
                     </dd>
@@ -300,3 +342,4 @@ function Index() {
     </>
   );
 }
+```
