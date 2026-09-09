@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logoAsset from "@/assets/backrest-logo.jpg.asset.json";
 
-const WHATSAPP_URL = "https://wa.me/918451945853";
-
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/#about" },
@@ -69,12 +67,10 @@ export function SiteHeader() {
             Privacy Policy
           </Link>
           <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:backrest@sachafoam.com"
             className="inline-flex items-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            WhatsApp Us
+            Email Us
           </a>
         </nav>
 
@@ -120,13 +116,11 @@ export function SiteHeader() {
               Privacy Policy
             </Link>
             <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:backrest@sachafoam.com"
               onClick={() => setOpen(false)}
               className="mt-1 inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
             >
-              WhatsApp Us
+              Email Us
             </a>
           </nav>
         </div>
