@@ -1,8 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Mail, Phone } from "lucide-react";
 
-const WHATSAPP_URL = "https://wa.me/918451945853";
-
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-cream">
@@ -40,14 +38,7 @@ export function SiteFooter() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0 text-gold" />
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-colors hover:text-foreground"
-                >
-                  +91 84519 45853
-                </a>
+                <span>+91 84519 45853</span>
               </li>
             </ul>
           </div>
